@@ -22,21 +22,25 @@
             <artifactId>event-service-rest</artifactId>
             <version>${parent.version}</version>
         </dependency>
-        <dependency>
-            <groupId>ru.home.learn</groupId>
-            <artifactId>event-service-impl</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ru.home.learn</groupId>
-            <artifactId>event-service-api</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>ru.home.learn</groupId>
-            <artifactId>event-service-dto</artifactId>
-            <version>${parent.version}</version>
-        </dependency>
     </dependencies>
+
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <classifier>spring-boot</classifier>
+                        <mainClass>ru.home.learn.MyRestApplication</mainClass>
+                        <excludes>
+                            <exclude>
+                                <groupId>org.projectlombok</groupId>
+                                <artifactId>lombok</artifactId>
+                            </exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
 
 </project>

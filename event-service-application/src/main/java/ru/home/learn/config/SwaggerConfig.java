@@ -1,4 +1,4 @@
-package ru.home.learn.app.config;
+package ru.home.learn.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

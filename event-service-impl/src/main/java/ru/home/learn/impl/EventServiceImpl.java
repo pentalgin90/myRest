@@ -2,11 +2,10 @@ package ru.home.learn.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.home.learn.api.EventService;
+import ru.home.learn.api.repositories.EventRepo;
+import ru.home.learn.api.services.EventService;
 import ru.home.learn.dto.Event;
-import ru.home.learn.dto.repositories.EventRepo;
 
 import java.util.List;
 

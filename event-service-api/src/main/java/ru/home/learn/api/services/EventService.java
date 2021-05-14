@@ -1,4 +1,4 @@
-package ru.home.learn.api;
+package ru.home.learn.api.services;
 
 import ru.home.learn.dto.Event;
 

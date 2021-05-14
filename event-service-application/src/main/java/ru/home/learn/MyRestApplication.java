@@ -1,4 +1,4 @@
-package ru.home.learn.app;
+package ru.home.learn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
